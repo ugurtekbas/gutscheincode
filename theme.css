@@ -19,7 +19,6 @@ a:hover {
   border: .05rem solid #fff;
 }
 
-
 /*
  * Base structure
  */
@@ -41,7 +40,6 @@ body {
 .cover-container {
   max-width: 42em;
 }
-
 
 /*
  * Header
@@ -85,22 +83,28 @@ body {
   }
 }
 
-
 /*
  * Cover
  */
 .cover {
-  padding: 0 1.5rem;
+  padding: 0 .5rem;
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;
   font-weight: 700;
 }
 
-
 /*
  * Footer
  */
 .mastfoot {
   color: rgba(255, 255, 255, .5);
+}
+
+.code-link {
+  color: rgb(42,85,42)
+}
+
+.code-link:hover {
+  color: rgb(0,0,0)
 }
