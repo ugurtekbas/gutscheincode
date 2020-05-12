@@ -107,3 +107,7 @@ body {
 .code-link:hover {
   color: rgb(0,0,0)
 }
+
+.dater {
+  float:left;
+}

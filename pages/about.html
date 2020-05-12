@@ -52,14 +52,30 @@
             <main role="main" class="inner cover">
                 <p class="lead mt-5">Hi there!</p>
                 <p class="lead">I created this site to help people who wants to open a new N26 bank account.</p>
-                <p class="lead">You can use my promo code here and get free €20 at your first purchase with your N26 card.</p>
+                <p class="lead">You can use my promo code and get free €20 at your first purchase with your N26 card.</p>
             </main>
 
             <footer class="mastfoot mt-auto">
-                <p id="yearP">
-                  <span>
-                    <script>document.getElementById('yearP').appendChild(document.createTextNode(new Date().getFullYear()))</script>
-                </p>
+                <div class="inner">
+                    <div class="row">
+                        <div class="col">
+                            <p id="yearP" class="dater">
+                                <span>
+                                    <script>
+                                        document.getElementById("yearP").appendChild(document.createTextNode(new Date().getFullYear()));
+                                    </script>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="col">
+                            <nav class="nav nav-masthead justify-content-center">
+                                <span>
+                                    <a class="nav-link" href="pages/disclaimer.html">Disclaimer</a>
+                                </span>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
             </footer>
         </div>
     </body>

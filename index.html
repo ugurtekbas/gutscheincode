@@ -9,7 +9,7 @@
         <link rel="canonical" href="Gutscheincode site link" />
 
         <!-- Bootstrap core CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
 
         <!-- Favicons -->
         <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180" />
@@ -54,27 +54,39 @@
                 <h2 class="cover-heading mb-3">Just use the promo code below</h2>
 
                 <div class="row">
-                  <div class="col-auto offset-3 offset-sm-4 offset-md-4 alert alert-success" role="alert">
-                    <strong>aksgausausa</strong> <button type="button" class="btn btn-warning">Copy</button>
-                  </div>
+                    <div class="col-auto offset-3 offset-sm-4 offset-md-4 offset-lg-4 alert alert-success" role="alert"><strong>aksgausausa</strong> <button type="button" class="btn btn-warning">Copy</button></div>
                 </div>
 
                 <h1 class="cover-heading mb-4 mt-4">OR</h1>
                 <h2 class="cover-heading">Click the link below and sign up</h2>
                 <div class="row">
-                  <div class="col-auto offset-3 offset-sm-4 offset-md-4 alert alert-success" role="alert">
-                    <a class="code-link" href="https://www.google.com">https://www.google.com</a>
-                  </div>
+                    <div class="col-auto offset-3 offset-sm-4 offset-md-4 offset-lg-4 alert alert-success" role="alert">
+                        <a class="code-link" href="https://www.google.com">https://www.google.com</a>
+                    </div>
                 </div>
                 <p class="lead mt-5">As soon you make you first payment with your N26 card, you will receive €20 in your account.</p>
             </main>
 
             <footer class="mastfoot mt-auto">
                 <div class="inner">
-                    <p id="yearP">
-                      <span>
-                        <script>document.getElementById('yearP').appendChild(document.createTextNode(new Date().getFullYear()))</script>
-                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <p id="yearP" class="dater">
+                                <span>
+                                    <script>
+                                        document.getElementById("yearP").appendChild(document.createTextNode(new Date().getFullYear()));
+                                    </script>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="col">
+                            <nav class="nav nav-masthead justify-content-center">
+                                <span>
+                                    <a class="nav-link" href="pages/disclaimer.html">Disclaimer</a>
+                                </span>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
             </footer>
         </div>
