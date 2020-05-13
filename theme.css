@@ -26,7 +26,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background-color: #569F8C;
 }
 
 body {
@@ -53,8 +53,8 @@ body {
 
 .nav-masthead .nav-link {
   padding: .25rem 0;
-  font-weight: 700;
-  color: rgba(255, 255, 255, .5);
+  font-weight: 400;
+  color: rgb(225,225,225);
   background-color: transparent;
   border-bottom: .25rem solid transparent;
 }
@@ -70,6 +70,7 @@ body {
 
 .nav-masthead .active {
   color: #fff;
+  font-weight: 700;
   border-bottom-color: #fff;
 }
 
@@ -110,4 +111,9 @@ body {
 
 .dater {
   float:left;
+  color: rgb(225,225,225);
+}
+
+.disclaimer-right {
+  float:right;
 }
