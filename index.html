@@ -9,7 +9,8 @@
 
         <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
         <!-- Favicons -->
         <link rel="apple-touch-icon" href="assets/img/fav-icon.png" sizes="180x180" />
         <link rel="icon" href="assets/img/fav-icon-32.png" sizes="32x32" type="image/png" />
@@ -52,7 +53,7 @@
                 <h2 class="cover-heading mb-3">Verwenden Sie einfach den unten stehenden Gutscheincode</h2>
 
                 <div class="row justify-content-center">
-                    <div class="col-auto alert alert-success" role="alert"><strong>aksgausausa</strong> <button type="button" class="btn btn-warning">Kopieren</button></div>
+                    <div class="col-auto alert alert-success" role="alert"><strong id="promoCode">aksgausausa</strong> <button type="button" class="btn btn-warning" onclick="copyTheCode()">Kopieren</button></div>
                 </div>
 
                 <h1 class="cover-heading mb-4 mt-4">ODER</h1>
@@ -63,6 +64,14 @@
                     </div>
                 </div>
                 <p class="lead mt-4 mb-2">Sobald Sie Ihre erste Zahlung mit Ihrer N26-Karte getätigt haben, erhalten Sie 20 € auf Ihrem Konto.</p>
+
+                <div class="row justify-content-center">
+                  <div class="toast" id="copyToast">
+                      <div class="toast-body">
+                        Code wird kopiert
+                      </div>
+                  </div>
+                </div>
             </main>
 
             <footer class="mastfoot mt-auto">
@@ -88,5 +97,6 @@
                 </div>
             </footer>
         </div>
+    <script src="js/script.js"></script>
     </body>
 </html>
