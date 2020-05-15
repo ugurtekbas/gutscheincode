@@ -26,7 +26,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #569F8C;
+  background-color: #333;
 }
 
 body {
@@ -116,4 +116,8 @@ body {
 
 .disclaimer-right {
   float:right;
+}
+
+.toast-style {
+  background-color: #569F8C;
 }
