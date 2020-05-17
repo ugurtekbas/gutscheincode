@@ -1,4 +1,7 @@
 function copyTheCode() {
+  //track the click first
+  ga('send', 'event', 'Button', 'Click', 'Code copying');
+
   if (document.selection) {
     var range = document.body.createTextRange();
     range.moveToElementText(document.getElementById("promoCode"));
