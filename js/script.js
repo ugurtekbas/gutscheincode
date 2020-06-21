@@ -1,6 +1,6 @@
 function copyTheCode() {
   //track the click first
-  ga('send', 'event', 'Button', 'Click', 'Code copying');
+  ga('send', 'event', 'buttons', 'click', 'code-copying');
 
   if (document.selection) {
     var range = document.body.createTextRange();
