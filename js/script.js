@@ -1,6 +1,6 @@
 function copyTheCode() {
   //track the click first
-  ga('send', 'event', 'buttons', 'click', 'code-copying');
+  gtag('event', 'Copy button click', { 'event_category': 'Button click', 'event_label': 'Copy', 'value': 1 })
 
   if (document.selection) {
     var range = document.body.createTextRange();
