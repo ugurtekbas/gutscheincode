@@ -24,6 +24,7 @@ function doesCookieExist(name) {
 }
 
 function closeBannerSetCookie() {
+  gtag('event', 'Close banner button click', { 'event_category': 'Button click', 'event_label': 'Banner close', 'value': 1 })
   document.getElementById("cookie-banner").style.display = "none";
   createCookie(name, value, days);
 }
