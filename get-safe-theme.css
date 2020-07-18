@@ -59,8 +59,13 @@ body {
   margin-bottom: 0;
 }
 
-.masthead-brand, a {
+.masthead-brand a {
   color: #000;
+}
+
+.masthead-brand a:hover,
+.masthead-brand a:hover {
+  border-bottom: .25rem solid rgba(0, 0, 0, .25); 
 }
 
 .nav-masthead .nav-link {
