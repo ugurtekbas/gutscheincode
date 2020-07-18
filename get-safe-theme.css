@@ -55,7 +55,12 @@ body {
 }
 
 .masthead-brand {
+  color: #000;
   margin-bottom: 0;
+}
+
+.masthead-brand, a {
+  color: #000;
 }
 
 .nav-masthead .nav-link {

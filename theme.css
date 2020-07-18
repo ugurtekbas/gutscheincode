@@ -51,6 +51,11 @@ body {
   margin-bottom: 0;
 }
 
+.masthead-brand a:hover,
+.masthead-brand a:focus {
+  border-bottom: .25rem solid rgb(225,225,225, 0.25);
+}
+
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: 400;
