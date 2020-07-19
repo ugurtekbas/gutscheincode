@@ -14,6 +14,9 @@ a:hover {
   color:#f6c144;
   padding-left: 5px;
   padding-right: 5px;
+  border: 1px transparent #fff;
+  border-radius: 3px;
+  text-decoration: none !important;
 }
 
 /* Custom default button */
@@ -65,8 +68,8 @@ body {
 
 .masthead-brand a:hover,
 .masthead-brand a:hover {
-  border-bottom: .25rem solid rgba(0, 0, 0, .25); 
-  color: #04130f;
+  border-bottom: .25rem solid rgba(0, 0, 0, .25);
+  color: #000;
 }
 
 .nav-masthead .nav-link {
