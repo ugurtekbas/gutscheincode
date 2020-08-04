@@ -1,5 +1,17 @@
+var gutscheinCodes = obj = JSON.parse('[{ "code":"ethemo1101", "link":"https://n26.com/r/ethemo1101" }, { "code":"johanneb7205", "link":"https://n26.com/r/johanneb7205" }]');
+var randomNum = Math.floor(Math.random() * 2);
+setCodes();
+
+function setCodes() {
+    document.getElementById("promoCode").innerHTML = gutscheinCodes[randomNum].code;
+    document.getElementById("promoLink").innerHTML = gutscheinCodes[randomNum].link;
+    document.getElementById("promoLink").href = gutscheinCodes[randomNum].link;
+
+    var eventText = 'Selected code: ' + gutscheinCodes[randomNum].code;
+    gtag('event', eventText, { 'event_category': 'Code selection', 'event_label': 'Code selected', 'value': 1 })
+}
+
 function copyTheCode() {
-  //track the click first
   gtag('event', 'Copy button click', { 'event_category': 'Button click', 'event_label': 'Copy', 'value': 1 })
 
   if (document.selection) {
