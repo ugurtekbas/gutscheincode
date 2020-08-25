@@ -1,5 +1,5 @@
-var gutscheinCodes = obj = JSON.parse('[{ "code":"ethemo1101", "link":"https://n26.com/r/ethemo1101" }, { "code":"johanneb7205", "link":"https://n26.com/r/johanneb7205" }, { "code":"pedroc2390", "link":"https://n26.com/r/pedroc2390" }]');
-var randomNum = Math.floor(Math.random() * 3);
+var gutscheinCodes = obj = JSON.parse('[{ "code":"ethemo1101", "link":"https://n26.com/r/ethemo1101" }, { "code":"johanneb7205", "link":"https://n26.com/r/johanneb7205" }, { "code":"pedroc2390", "link":"https://n26.com/r/pedroc2390" }, { "code":"andresv9750", "link":"https://n26.com/r/andresv9750" }]');
+var randomNum = Math.floor(Math.random() * 4);
 setCodes();
 
 function setCodes() {
