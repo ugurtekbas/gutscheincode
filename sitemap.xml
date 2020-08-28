@@ -5,6 +5,16 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+<!-- I removed this url because it in the canonical in index.html
+Your XML Sitemap should only contain URLs you wish for search engines to index. 
+If a URL is canonicalized, this is an explicit statement to search engines that you do NOT wish for the URL to be indexed, 
+and instead wish for the canonical URL to consolidate indexing signals.
+      <url>
+        <loc>https://n26gutscheincode.de</loc>
+        <lastmod>2020-08-25T20:53:13+00:00</lastmod>
+        <priority>0.80</priority>
+      </url>
+-->
 <url>
   <loc>https://n26gutscheincode.de/index.html</loc>
   <lastmod>2020-08-25T20:53:13+00:00</lastmod>
