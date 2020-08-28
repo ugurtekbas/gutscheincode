@@ -1,0 +1,3 @@
+Sitemap: https://n26gutscheincode.de/sitemap.xml
+User-agent:*
+Disallow:
