@@ -1,6 +1,11 @@
 <!DOCTYPE html>
-<html lang="de">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
     <head>
+
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154999706-2"></script>
         <script>
@@ -10,88 +15,109 @@
 
           gtag('config', 'UA-154999706-2', { 'anonymize_ip': true, 'allow_google_signals': false, 'allow_ad_personalization_signals': false });
         </script>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Erstellen Sie ein neues Bankkonto und erhalten Sie 30 €. Verwenden Sie diesen kostenlosen Gutscheincode, um Ihr erstes N26-Bankkonto zu erstellen." />
         <link rel="canonical" href="https://n26gutscheincode.de" />
         <title>Bester N26 Gutscheincode | 30€ Gutscheincode zu verwenden</title>
 
-        <!-- Bootstrap core CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+        
         <!-- Favicons -->
-        <link rel="apple-touch-icon" href="assets/img/fav-icon.png" sizes="180x180" />
-        <link rel="icon" href="assets/img/fav-icon-32.png" sizes="32x32" type="image/png" />
-        <link rel="icon" href="assets/img/fav-icon-16.png" sizes="16x16" type="image/png" />
-        <link rel="mask-icon" href="assets/img/fav-icon.svg" color="#563d7c" />
-        <link rel="icon" href="assets/img/fav-icon.ico" />
-        <meta name="theme-color" content="#563d7c" />
-        <style>
-            .bd-placeholder-img {
-                font-size: 1.125rem;
-                text-anchor: middle;
-                -webkit-user-select: none;
-                -moz-user-select: none;
-                -ms-user-select: none;
-                user-select: none;
-            }
+        <link rel="apple-touch-icon" href="images/fav-icon.png" sizes="180x180" />
+        <link rel="icon" href="images/fav-icon-32.png" sizes="32x32" type="image/png" />
+        <link rel="icon" href="images/fav-icon-16.png" sizes="16x16" type="image/png" />
+        <link rel="mask-icon" href="images/fav-icon.svg" color="#563d7c" />
+        <link rel="icon" href="images/fav-icon.ico" />
+        <!-- Favicons -->
 
-            @media (min-width: 768px) {
-                .bd-placeholder-img-lg {
-                    font-size: 3.5rem;
-                }
-            }
-        </style>
-        <link href="theme.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/styles.min.css">
     </head>
-    <body class="text-center">
-        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-            <header class="masthead mb-auto">
-                <div class="inner">
-                    <h3 class="masthead-brand"><a style="text-decoration:none;" href="./">N26 Gutscheincode</a></h3>
-                    <nav class="nav nav-masthead justify-content-center">
-                        <a class="code-link" onclick="gtag('event', 'GetSafe nav click', { 'event_category': 'Link click', 'event_label': 'GetSafe-Nav-Link', 'value': 1 })" href="pages/getsafe.html">
-                          <div style="padding:5px; margin-right:1rem;" class="alert alert-success" role="alert">
-                            <button type="button" class="btn btn-warning">
-                              <b class="code-link">Hole kostenlose Versicherung</b>
-                            </button>
-                          </div>
-                        </a>
-                        <a class="nav-link" href="pages/about.html">Über uns</a>
-                    </nav>
-                </div>
-            </header>
-
-            <main role="main" class="inner cover">
-                <h1 class="cover-heading mb-5 mt-4">Holen Sie sich 30 € für Ihr neues N26-Bankkonto!</h1>
-                <h2 class="cover-heading mb-3">Verwenden Sie einfach den unten stehenden Gutscheincode</h2>
-
-                <div class="row justify-content-center">
-                    <div class="col-auto alert alert-success" role="alert"><strong id="promoCode">ethemo1101</strong> <button type="button" class="btn btn-warning" onclick="copyTheCode()">Kopieren</button></div>
-                </div>
-                <div class="row justify-content-center">
-                  <div class="toast toast-style" id="copyToast" style="position: absolute;">
-                      <div class="toast-body">
-                        Code wird kopiert
-                      </div>
-                  </div>
-                </div>
-
-                <h1 class="cover-heading mb-4 mt-4">ODER</h1>
-                <h2 class="cover-heading">Klicken Sie auf den Link unten und melden Sie sich an</h2>
-                <div class="row justify-content-center">
-                    <div class="col-auto alert alert-success" role="alert">
-                        <a id="promoLink" class="code-link" onclick="gtag('event', 'Signup link click', { 'event_category': 'Link click', 'event_label': 'Signup-Link', 'value': 1 })" href="https://n26.com/r/ethemo1101">https://n26.com/r/ethemo1101</a>
+    <body>
+        <div class = "header-container">
+            <div class="header">
+                <nav class="container">
+                    <div class="header-logo">
+                        <div class = "link-wrapper">
+                            <a class="logo" href="./">
+                                N26 Gutscheincode
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <p class="lead mt-4 mb-2">Sobald Sie Ihre erste Zahlung mit Ihrer N26-Karte getätigt haben, werden 30 Euro auf ihr Konto überwiesen.</p>
-            </main>
+                    <div class="header-links">
+                        <div class = "link-wrapper">
+                            <a 
+                                onclick="gtag('event', 'GetSafe nav click', { 'event_category': 'Link click', 'event_label': 'GetSafe-Nav-Link', 'value': 1 })"
+                                href="./pages/get-safe.html">
+                                Hole kostenlose Versicherung &#129321
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
 
-            <footer class="mastfoot mt-auto">
-                <div class="inner">
-                    <div class="row">
-                        <div class="col">
+        <div class="card">
+            <div class="card-title">
+                <svg
+                    xmlns:svg="http://www.w3.org/2000/svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    class="card-title-logo"
+                    width="80"
+                    height="80"
+                    viewBox="-24.5972991 -24.5972991 1249.1945982 869.1045682">
+                <defs
+                    id="defs3658" />
+                <path
+                    d="m 302.29003,179.3 0,315.58 c 0,27.93 0.65,44.83 1.95,61.07 l -1.3,0 C 296.11003,537.35 288.06,521.05 276.05,499.83 L 89.41,179.3 l -85.3,0 0,461.3 66.46,0 0,-315.6 c 0,-27.94 -0.65,-44.83 -1.94,-61.08 l 1.37,0 c 6.82,18.6 14.87,34.89 26.89,56.1 l 186.58,320.58 84.40003,0 0,-461.3 z m 69.71,-179.3 0,59.77 L 0,59.77 0,0 Z m 0,760.14 0,59.77 L 0,819.91 0,760.14 Z m 205.29,-179.3 c 34.73,-24 84.52,-63.87 106.61,-86 25.11,-25.12 96.59,-89.69 96.59,-181.74 0,-95.15 -62,-138.7 -145.85,-138.7 -101.64,0.04 -151.83,62.6 -151.83,134.17 a 146.72,146.72 0 0 0 4.55,36.43 l 69.64,6.7 a 185.21,185.21 0 0 1 -4.55,-39.63 c 0,-53.6 35.47,-79.25 79.88,-79.25 43.3,0 75.35,24.26 75.35,82.6 0,59.29 -29,99.7 -73.16,143.91 -46.17,46.2 -119.97,101.32 -155.52,126.67 l 0,54.6 306.67,0 0,-59.76 z M 1060.44,333.69 c -55,0 -94.26997,25.44 -114.11997,63.1 0,-89 31,-166.47 104.69997,-166.47 46.84,0 65.43,26.95 75.36,71.14 l 68.22,-13.65 c -16,-76.29 -64.53,-113.37 -143.1,-113.37 -98.71997,0 -172.57997,75.8 -172.57997,245.69 0,150.81 61.59,225.35 167.70997,225.35 87.69,0 153.37,-59.88 153.37,-158.55 0,-77.09 -41.1,-153.24 -139.56,-153.24 z m -13.64,256.05 c -54.41997,0 -92.09997,-50 -98.61997,-116.39 16.53,-56.63 53.17997,-84.84 96.51997,-84.84 55.71,0 87.14,41.14 87.14,99.63 0,62.78 -35.84,101.6 -85.04,101.6 z"
+                    id="path3638" />
+                </svg>
+            </div>
+            <div class="card-revenue"> <span style="font-weight: bold;">100</span> people &#128105 used this code and made <span style="font-weight: bold;">€200</span> &#128182 in total</div>
+            <div class="card-bang">
+                <img class="card-bang-image" src="./images/bang_up.png" >
+
+                <div class="card-bang-code"> 
+                    <span id="promoCode" class="card-bang-code-text">ethemo1101</span> 
+                    <span class="card-bang-code-button" onclick="copyTheCode()">Copy</span> 
+                </div>
+                
+                <img class="card-bang-image" src="./images/bang_down.png">
+            </div>
+
+            <div id="copyToast" class="card-copy-toast">Code wird kopiert</div>
+            
+            <div class="card-main-vote">&#128077<span style="font-weight: bold;"> 20</span></div>
+            
+            <div class = "card-main-header">
+                Holen Sie sich 30 € für Ihr neues N26-Bankkonto!
+            </div>
+            <div class="card-main-header-medium">
+                Verwenden Sie einfach den obigen Gutscheincode.
+            </div>
+            <div class="card-main-header-small">
+                Oder klicken Sie auf den Link unten und melden Sie sich an.</p>
+            </div>
+            <div class="card-bang-code"> 
+                <span onclick="openRefLink()" class="card-bang-code-link-text"> <span>&#128279 </span>
+                    <a id="promoLink" href="https://n26.com/r/ethemo1101" onclick="gtag('event', 'Signup link click', { 'event_category': 'Link click', 'event_label': 'Signup-Link', 'value': 1 })">https://n26.com/reference...</a>
+                </span> 
+            </div>
+            <div class="card-main-header-normal"> 
+                Sobald Sie Ihre erste Zahlung mit Ihrer N26-Karte getätigt haben, werden 30 Euro auf ihr Konto überwiesen.
+            </div>
+            
+        </div>
+        
+        <footer class = "footer-container">
+            <div class="footer">
+                <nav class="container">
+                    <div class="footer-date">
+                        <div class = "footer-date-link-wrapper">
                             <p id="yearP" class="dater">
                                 <span>
                                     <script>
@@ -100,32 +126,28 @@
                                 </span>
                             </p>
                         </div>
-                        <div class="col">
-                            <nav class="nav nav-masthead disclaimer-right">
-                                <span>
-                                    <a class="nav-link" href="pages/disclaimer.html">Haftungsausschluss</a>
-                                </span>
-                                <span style="margin: 0 0 0 15px">
-                                    <a class="nav-link" href="pages/privacy.html">Datenschutz</a>
-                                </span>
-                            </nav>
+                    </div>
+                    <div class="footer-links">
+                        <div class = "footer-link-wrapper">
+                            <a href="./pages/disclaimer.html">
+                                Haftungsausschluss
+                            </a>
+                        </div>
+                        <div class = "footer-link-wrapper">
+                            <a href="./pages/about.html">
+                                Über uns
+                            </a>
+                        </div>
+                        <div class = "footer-link-wrapper">
+                            <a href="./pages/privacy.html">
+                                Datenschutz
+                            </a>
                         </div>
                     </div>
-                </div>
-            </footer>
-        </div>
-        <div id="cookie-banner">
-            <div class="cookie-icon">🍪</div>
-            <div class="cookie-fineprint">
-              <span class="cookie-fineprint__strong">Wir verwenden Cookies für Analysen, weitere Informationen finden Sie auf <a href="pages/privacy.html">unserer Pivacy-Seite</a>. Wir lesen keine anderen Daten aus und helfen können, dir gruselig exakt auf dich zu sehene Anzeigen zu zeigen. Versprochen!</span>
+                </nav>
             </div>
-            <div id="close">
-              <svg class="close-icon" viewBox="0 0 24 24" style="height: 2rem; width: auto;">
-                <path d="M20 6.91L17.09 4L12 9.09L6.91 4L4 6.91L9.09 12L4 17.09L6.91 20L12 14.91L17.09 20L20 17.09L14.91 12L20 6.91Z"></path>
-              </svg>
-            </div>
-        </div>
-        <script src="js/script.js"></script>
-        <script src="js/cookie.js"></script>
+        </footer>
+        
+        <script src="js/main.min.js"></script>
     </body>
 </html>
