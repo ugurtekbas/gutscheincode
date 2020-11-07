@@ -95,10 +95,9 @@
                 <img class="card-bang-image" src="../images/bang_up.png" >
 
                 <div class="card-bang-code"> 
-                    <span class="card-bang-code-link-text"> 
+                    <span onclick="openGetSafeLink()" class="card-bang-code-link-text"> 
                         <span>&#128279 </span>
                         <a 
-                            onclick="gtag('event', 'GetSafe website click', { 'event_category': 'Link click', 'event_label': 'GetSafe-Website-Link', 'value': 1 })"
                             href="https://www.hellogetsafe.com/en-de/referral?n=Ugur&r=8REF-8MW8&s=1">
                             https://www.hellogetsafe.com/...
                         </a>
@@ -164,7 +163,13 @@
         </footer>
         
         <!--build:js js/main.min.js -->
-        <!-- <script src=""></script>-->
+        <script>
+            function openGetSafeLink() {
+                console.log('hey');
+                gtag('event', 'GetSafe website click', { 'event_category': 'Link click', 'event_label': 'GetSafe-Website-Link', 'value': 1 })
+                window.open("https://www.hellogetsafe.com/en-de/referral?n=Ugur&r=8REF-8MW8&s=1", "_top");
+            }
+        </script>
         <!-- endbuild -->
     </body>
 </html>
