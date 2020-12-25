@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -48,9 +44,11 @@
                     <div class="header-links">
                         <div class = "link-wrapper">
                             <a 
-                                onclick="gtag('event', 'GetSafe nav click', { 'event_category': 'Link click', 'event_label': 'GetSafe-Nav-Link', 'value': 1 })"
-                                href="./pages/get-safe.html">
-                                Hole kostenlose Versicherung &#129321
+                                onclick="gtag('event', 'Monster nav click', { 'event_category': 'Link click', 'event_label': 'Monster-Nav-Link', 'value': 1 })"
+                                target="_blank"
+                                rel="noreferrer"
+                                href="https://gutscheinmonster.org">
+                                Alle Gutscheine anzeigen &#129321
                             </a>
                         </div>
                     </div>
@@ -159,20 +157,5 @@
         
         <script src="js/main.min.js"></script>
         <script src="js/cookie.min.js"></script>
-
-        <script>
-            var disqus_config = function () {
-            this.page.url = "https://n26gutscheincode.de";
-            this.page.identifier = "n26gutscheincode";
-            };
-            
-            (function() {
-                var d = document, s = d.createElement('script');
-                s.src = 'https://n26gutschein.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </body>
 </html>
