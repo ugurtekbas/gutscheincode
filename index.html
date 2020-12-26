@@ -107,6 +107,20 @@
             <div class="card-main-header-normal"> 
                 Sobald Sie Ihre erste Zahlung mit Ihrer N26-Karte getätigt haben, werden 30 Euro auf ihr Konto überwiesen.
             </div>
+
+            <div class="aff-container">
+                <a 
+                    id="affLink"
+                    onclick="onAffLinkClicked('N26');" 
+                    href=""
+                    target="_blank"
+                    rel="noreferrer nofollow">
+                    <div class="aff-container-wrapper">
+                        <p id="affTitle" class="aff-container-wrapper-title"> Checkout best rated scale for your kitchen!</p>
+                        <p class="aff-container-wrapper-action"> Schau dir bei Amazon an!</p>
+                    </div>
+                </a>
+            </div>
         </div>
         
         <footer class = "footer-container">
@@ -146,12 +160,14 @@
 
         <div id="cookie-banner" class="cookie-container">
             <div class="cookie">
-                <div class="cookie-text">Wir verwenden Cookies für Analysen, weitere Informationen finden Sie auf <a href="./pages/privacy.html">unserer Pivacy-Seite</a>. Wir lesen keine anderen Daten aus.</div>
+                <div class="cookie-text">Wir verwenden Cookies für Analysen, weitere Informationen finden Sie auf <a href="pages/privacy.html">unserer Pivacy-Seite</a>. Wir lesen keine anderen Daten aus.</div>
                 <div id="cookie-close" class="cookie-button">X</div>
             </div>
         </div>
         
         <script src="js/main.min.js"></script>
         <script src="js/cookie.min.js"></script>
+        <script src="js/aff.min.js"></script>
+        <script>setBankProduct();</script>
     </body>
 </html>
