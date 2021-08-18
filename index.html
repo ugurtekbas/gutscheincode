@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="js/disable.min.js"></script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154999706-2"></script>
         <script>
@@ -107,7 +109,7 @@
             <div class="card-main-header-normal"> 
                 Sobald Sie Ihre erste Zahlung mit Ihrer N26-Karte getätigt haben, werden 30 Euro auf ihr Konto überwiesen.
             </div>
-
+            <!--
             <div class="aff-container">
                 <a 
                     id="affLink"
@@ -120,6 +122,42 @@
                         <p class="aff-container-wrapper-action"> Schau dir bei Amazon an!</p>
                     </div>
                 </a>
+            </div>
+            -->
+            <div class="in-page-ns-form card-item-newsletter newsletter-form-on-home-page">
+                <div id="form-wrapper" class="in-page-ns-form-wrapper">
+                    <p id="ns-title" class="in-page-ns-form-wrapper-title">Hör auf mehr zu bezahlen!</p>
+                    <p id="ns-subtitle" class="in-page-ns-form-wrapper-subtitle">Erhalten Sie einmal im Monat exklusive Gutscheincodes für Ihre E-Mail und zahlen Sie weniger für Ihre Online-Einkäufe.</p>
+                    
+                    <p id="ns-error" class="generic-error">Das hat leider nicht geklappt. Versuchs bitte noch einmal.</p>
+                    <p id="ns-email-error" class="generic-error">Diese Email scheint ungültig zu sein. Bitte überprüfe sie und probiere es nochmal.</p>
+                    <form id="ns-form">
+                        <input id="ns-email-input" class="ns-email" placeholder="anne@ichwillgutschein.com" name="EMAIL" type="email">
+                        <button id="ns-signup-btn" type="button" class="ns-sign-up" onclick="onSignupClick();"><span>Sende mir Codes</span></span></button> 
+                    </form>
+                    
+                    <p class="in-page-ns-form-wrapper-title-link">
+                        Die 
+                        <span class="newsletter-link">
+                            <a 
+                                onclick="" 
+                                target="_blank"
+                                href="./pages/privacy.html"
+                                > 
+                                Datenschutzbestimmungen 
+                            </a>
+                        </span>
+                        habe ich zur Kenntnis genommen.
+                    </p>
+                </div>
+
+                <div id="success-section" class="success-animation">
+                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                        <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                        <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                    </svg>
+                    <p class="in-page-ns-form-wrapper-title">Danke fürs Abonnieren</p>
+                </div>
             </div>
         </div>
         
@@ -168,6 +206,7 @@
         <script src="js/main.min.js"></script>
         <script src="js/cookie.min.js"></script>
         <script src="js/aff.min.js"></script>
-        <script>setBankProduct();</script>
+        <script src="js/newsletter.min.js"></script>
+        <!-- <script>setBankProduct();</script> -->
     </body>
 </html>
